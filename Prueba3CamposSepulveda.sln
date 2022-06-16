@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prueba3CamposSepulveda", "Prueba3CamposSepulveda\Prueba3CamposSepulveda.csproj", "{A47C4796-4E78-47FD-8E44-13FDCF9AB570}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prueba3CamposSepulvedaModel", "Prueba3CamposSepulvedaModel\Prueba3CamposSepulvedaModel.csproj", "{2665200D-E247-4255-BD57-A57C203A8CF8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A47C4796-4E78-47FD-8E44-13FDCF9AB570}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A47C4796-4E78-47FD-8E44-13FDCF9AB570}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A47C4796-4E78-47FD-8E44-13FDCF9AB570}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A47C4796-4E78-47FD-8E44-13FDCF9AB570}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2665200D-E247-4255-BD57-A57C203A8CF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2665200D-E247-4255-BD57-A57C203A8CF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2665200D-E247-4255-BD57-A57C203A8CF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2665200D-E247-4255-BD57-A57C203A8CF8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CABC83FD-00D5-4E5B-A87C-3CDD0AF21DAD}
+	EndGlobalSection
+EndGlobal
