@@ -11,7 +11,7 @@ namespace Prueba3CamposSepulveda
 {
 
 
-    public partial class Default
+    public partial class AgregarLecturas
     {
 
         /// <summary>
@@ -24,30 +24,57 @@ namespace Prueba3CamposSepulveda
         protected global::System.Web.UI.WebControls.Label mensajeLbl;
 
         /// <summary>
-        /// Control numMedTxt.
+        /// Control medTxt.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox numMedTxt;
+        protected global::System.Web.UI.WebControls.DropDownList medTxt;
 
         /// <summary>
-        /// Control tipoRbl.
+        /// Control calendario.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList tipoRbl;
+        protected global::System.Web.UI.WebControls.Calendar calendario;
 
         /// <summary>
-        /// Control agregarBtn.
+        /// Control horaLectura.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button agregarBtn;
+        protected global::System.Web.UI.WebControls.TextBox horaLectura;
+
+        /// <summary>
+        /// Control minutoLectura.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox minutoLectura;
+
+        /// <summary>
+        /// Control valorConsumo.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox valorConsumo;
+
+        /// <summary>
+        /// Control agregarLecturaBtn.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button agregarLecturaBtn;
     }
 }

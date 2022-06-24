@@ -9,13 +9,28 @@ namespace Prueba3CamposSepulvedaModel.DTO
     public class Lectura
     {
         private Medidor medidor;
-        private DateTime fecha;
-        private double consumo;
+        private string fecha;
+        private string hora;
+        private double consumo=0;
+        private double total_consumo=0;
 
-        public Medidor Medidor { get { return medidor; } set { medidor = value; } }
-        public DateTime Fecha { get { return fecha; } set { fecha = value;} }
-        public double Consumo { get { return consumo; } set { consumo = value; } }
+        public Lectura() { 
+        
+        }
+        public Lectura(Medidor medidor, string fecha, string hora, double consumo, double total_consumo)
+        {
+            this.medidor = medidor;
+            this.fecha = fecha;
+            this.hora = hora;
+            this.consumo = 0;
+            this.total_consumo = 0;
+        }
 
+        public Medidor Medidor { get => medidor; set => medidor = value; }
+        public string Fecha { get => fecha; set => fecha = value; }
+        public string Hora { get => hora; set => hora = value; }
+        public double Consumo { get => consumo; set => consumo = value; }
+        public double Total_consumo { get => total_consumo; set => total_consumo = value; }
     }
 
 }

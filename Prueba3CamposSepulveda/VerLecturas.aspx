@@ -1,18 +1,16 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Principal.Master" AutoEventWireup="true" CodeBehind="VerMedidores.aspx.cs" Inherits="Prueba3CamposSepulveda.VerMedidores" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Principal.Master" AutoEventWireup="true" CodeBehind="VerLecturas.aspx.cs" Inherits="Prueba3CamposSepulveda.VerLecturas" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Contenido" runat="server">
     <div class="row">
         <div class="col-lg-6 mx-auto">
             <div class="card">
                 <div class="card-header bg-danger text-white">
-                    <h3>Ver Medidores</h3>
+                    <h3>Ver Lecturas</h3>
                 </div>
 
                 <div class="card-body">
                     <div class="form-group">
-                        <label for ="tipoDdl"> Filtrar por Tipo: </label>
-                        <asp:DropDownList AutoPostBack="true" OnSelectedIndexChanged="tipoDdl_SelectedIndexChanged" runat="server" ID="tipoDdl">
-                            <asp:ListItem Value="1" Text="Electronico"></asp:ListItem>
-                            <asp:ListItem Value="2" Text="Mecanico"></asp:ListItem>
+                        <label for ="lecturaDdl"> Filtrar por Medidor: </label>
+                        <asp:DropDownList AutoPostBack="true"  runat="" ID="lecturaDdl">
                         </asp:DropDownList>
                     </div>
                

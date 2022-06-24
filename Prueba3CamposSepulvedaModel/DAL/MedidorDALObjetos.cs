@@ -15,6 +15,19 @@ namespace Prueba3CamposSepulvedaModel.DAL
             medidores.Add(medidor);
 
         }
+   
+
+        public List<Medidor> FiltrarMedidores(int tipo)
+        {
+            return medidores.FindAll(c => c.Tipo == tipo);
+        }
+
+        public List<Medidor> FiltrarValidacion(string num_medidor)
+        {
+ 
+
+            return medidores.FindAll(c => c.Num_Medidor == num_medidor);
+        }
 
         public List<Medidor> ObtenerMedidores()
         {
