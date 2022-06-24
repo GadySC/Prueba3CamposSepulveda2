@@ -11,9 +11,8 @@
                 </div>
                 <div class="card-body">
                     <div class="form-group">
-                        <label for="numMedTxt">Numero Medidor: </label>
-                        
-                        <asp:TextBox ID="numMedTxt" CssClass="form-control" runat="server" CausesValidation="true"></asp:TextBox> 
+                        <label for="numMedTxt">Numero Medidor: </label>  
+                        <asp:TextBox ID="numMedTxt" CssClass="form-control" runat="server" CausesValidation="true" ></asp:TextBox> 
                     </div>
 
                     <div class="form-group">

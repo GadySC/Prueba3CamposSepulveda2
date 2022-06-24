@@ -11,6 +11,7 @@ namespace Prueba3CamposSepulvedaModel.DAL
     {
         List<Lectura> ObtenerLecturas();
         void AgregarLectura(Lectura lectura);
-        
+
+
     }
 }

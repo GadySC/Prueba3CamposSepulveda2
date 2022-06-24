@@ -15,10 +15,12 @@ namespace Prueba3CamposSepulvedaModel.DTO
         public Medidor() { 
         
         }
+
         public Medidor(string num_medidor)
         {
             this.Num_Medidor = num_medidor;
         }
+
         public Medidor(string num_medidor, int tipo)
         {
 

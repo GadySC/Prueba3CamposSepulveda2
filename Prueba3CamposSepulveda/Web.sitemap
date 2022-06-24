@@ -4,5 +4,6 @@
     <siteMapNode url="Default.aspx" title="Agregar Medidores"  description="" />
     <siteMapNode url="VerMedidores.aspx" title="Ver Medidores"  description="" />
 	<siteMapNode url="AgregarLecturas.aspx" title="Agregar Lecturas"  description="" />
+    <siteMapNode url="VerLecturas.aspx" title="Ver Lecturas"  description="" />
   </siteMapNode>
 </siteMap>

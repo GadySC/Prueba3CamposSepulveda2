@@ -18,12 +18,18 @@ namespace Prueba3CamposSepulveda
 
         }
 
-        public void FiltrarValidar(string num_medidor) {
+        public bool FiltrarValidar(string num_medidor) {
 
             List<Medidor> filtrada = medidorDAL.FiltrarValidacion(num_medidor);
+            
 
-            if (filtrada.Count == 0) {
+            if (filtrada.Count == 0)
+            {
                 this.mensajeLbl.Text = "No se encuentra ningun medidor en la lista.";
+                return false;
+            }
+            else {
+                return true;
             }
         }
 
@@ -31,18 +37,33 @@ namespace Prueba3CamposSepulveda
         {
             string num_medidor = this.numMedTxt.Text.Trim();
 
-            int tipo = Convert.ToInt32(this.tipoRbl.SelectedValue);
-
-            Medidor medidor = new Medidor()
+            if (!num_medidor.Equals(""))
             {
-                Num_Medidor = num_medidor,
-                Tipo = tipo,
-            };
+                int tipo = Convert.ToInt32(this.tipoRbl.SelectedValue);
+                if (!FiltrarValidar(num_medidor))
+                {
+                    Medidor medidor = new Medidor()
+                    {
+                        Num_Medidor = num_medidor,
+                        Tipo = tipo,
+                    };
 
-            medidorDAL.AgregarMedidor(medidor);
+                    medidorDAL.AgregarMedidor(medidor);
 
-            this.mensajeLbl.Text = "Medidor Ingresado Exitosamente !!!";
-            Response.Redirect("VerMedidores.aspx");
+                    this.mensajeLbl.Text = "Medidor Ingresado Exitosamente !!!";
+                    Response.Redirect("VerMedidores.aspx");
+
+                }
+                else
+                {
+                    this.mensajeLbl.Text = "Ya se encuentra registrado el medidor que ingreso, por favor ingrese otro.";
+
+                }
+            }
+            else {
+                this.mensajeLbl.Text = "Por favor ingrese un numero del medidor.";
+
+            }   
         }
     }
 }
